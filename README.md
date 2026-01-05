@@ -23,13 +23,14 @@ Tenho experiência real em ambientes de alta demanda, coordenação de entregas 
 - CSS3
 
 **Ferramentas**
-- Git e GitHub (básico)
+
 - Windows e macOS
 - Pacote Office (intermediário)
 
 **IA Generativa**
 - Midjourney
 - Stable Diffusion
+- Comfy UI
 - Veo3
 
 ---
@@ -53,7 +54,7 @@ Tenho experiência real em ambientes de alta demanda, coordenação de entregas 
 
 ## 🎓 Formação
 
-- **Desenvolvimento de Sistemas** — Universidade Cruzeiro do Sul (Cursando – 2025)
+- **Desenvolvimento de Sistemas** — Universidade Cruzeiro do Sul (Cursando – 2028)
 - **HTML + CSS** — Udemy (2024)
 - **Python e SQL** — Udemy (2023)
 - **Python para IA Generativa** — Udemy (em andamento – 2025)
@@ -75,4 +76,4 @@ Tenho experiência real em ambientes de alta demanda, coordenação de entregas 
 
 - LinkedIn: https://linkedin.com/in/henrique-p-costa
 - E-mail: myemail.henrique@gmail.com
-- cel/whatsapp: +5511 
+- cel/whatsapp: +5511 9 4792 7085
