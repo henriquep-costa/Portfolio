@@ -68,7 +68,7 @@ Tenho experiência real em ambientes de alta demanda, coordenação de entregas 
 
 ## 📄 Currículo
 
-👉 [Currículo em PDF](./CV Henrique Costa Tech.pdf)
+👉 [Currículo em PDF](./CV Henrique Costa.pdf)
 
 ---
 
