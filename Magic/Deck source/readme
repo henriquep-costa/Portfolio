@@ -1,0 +1,25 @@
+Magic Deck Analyzer
+
+Analisa decks de Magic: The Gathering mostrando cores, tipos de cartas e contagens.
+
+Como usar:
+
+1. Coloque seus decks .txt na pasta "decks".
+2. Execute:
+python main.py
+3. Escolha:
+   - Ver decks disponíveis
+   - Colar deck manualmente
+   - Sair
+
+Formato do arquivo .txt:
+
+- Linha de cores:
+# colors: WU
+
+- Linhas de cartas:
+20 Plains, land
+4 Ethereal Armor, enchantment
+4 Spellbook Vendor, creature
+
+Tipos válidos: land, creature, instant, sorcery, artifact, enchantment
