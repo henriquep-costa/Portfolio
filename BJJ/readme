@@ -1,0 +1,15 @@
+Catálogo de Técnicas de Jiu-Jitsu
+
+Aplicação simples em Python utilizando SQLite para catalogar técnicas de Jiu-Jitsu Brasileiro via linha de comando.
+
+O programa permite:
+
+Cadastrar técnicas
+
+Listar técnicas por categoria, posição ou nível
+
+Buscar técnicas pelo nome
+
+Os dados são armazenados em um banco SQLite local (jiujitsu.db), criado automaticamente ao executar o script.
+
+Projeto desenvolvido com foco em estudo de Python, SQL e organização de dados.
