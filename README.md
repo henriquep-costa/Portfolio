@@ -44,10 +44,6 @@ Tenho experiência real em ambientes de alta demanda, coordenação de entregas 
   Tecnologias: Python, lógica de programação, análise de dados.  
   🔗 Código: https://github.com/henriquep-costa/Portfolio/tree/main/previsao_vendas
 
-- **Projetos com IA Generativa**  
-  Criação de imagens e vídeos com foco criativo e técnico.  
-  🔗 Portfólio: https://www.miraimagem.com.br
-
 *(Novos projetos serão adicionados conforme evolução nos estudos)*
 
 ---
