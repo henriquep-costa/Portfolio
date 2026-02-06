@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>BJJ API</title>
+    <style>
+      input {
+        margin: 2px;
+        padding: 5px;
+      }
+      button {
+        padding: 5px 10px;
+      }
+      .success {
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <h1>BJJ Techniques</h1>
@@ -13,8 +28,9 @@
     <input id="category" placeholder="Category" />
     <input id="position" placeholder="Position" />
     <input id="level" placeholder="Level" />
-
     <button onclick="addTechnique()">Add</button>
+
+    <p id="message"></p>
 
     <hr />
 
@@ -22,34 +38,42 @@
     <ul id="list"></ul>
 
     <script>
-      /* --------------------------
-   BUSCAR
----------------------------*/
+      const messageEl = document.getElementById("message");
+
+      // ---------------------------
+      // BUSCAR TÉCNICAS
+      // ---------------------------
       function loadTechniques() {
         fetch("/api/techniques")
           .then((response) => response.json())
           .then((data) => {
             const list = document.getElementById("list");
             list.innerHTML = "";
-
             data.forEach((t) => {
               const li = document.createElement("li");
               li.textContent = `${t.name} | ${t.category} | ${t.position} | ${t.level}`;
               list.appendChild(li);
             });
-          });
+          })
+          .catch((err) => console.error(err));
       }
 
-      /* --------------------------
-   CADASTRAR
----------------------------*/
+      // ---------------------------
+      // ADICIONAR TÉCNICA
+      // ---------------------------
       function addTechnique() {
         const technique = {
-          name: document.getElementById("name").value,
-          category: document.getElementById("category").value,
-          position: document.getElementById("position").value,
-          level: document.getElementById("level").value,
+          name: document.getElementById("name").value.trim(),
+          category: document.getElementById("category").value.trim(),
+          position: document.getElementById("position").value.trim(),
+          level: document.getElementById("level").value.trim(),
         };
+
+        if (!technique.name) {
+          messageEl.textContent = "Name is required!";
+          messageEl.className = "error";
+          return;
+        }
 
         fetch("/api/techniques", {
           method: "POST",
@@ -57,10 +81,27 @@
             "Content-Type": "application/json",
           },
           body: JSON.stringify(technique),
-        }).then(() => loadTechniques());
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            messageEl.textContent = data.message || data.error;
+            messageEl.className = data.message ? "success" : "error";
+            loadTechniques();
+
+            // limpar campos
+            document.getElementById("name").value = "";
+            document.getElementById("category").value = "";
+            document.getElementById("position").value = "";
+            document.getElementById("level").value = "";
+          })
+          .catch((err) => {
+            console.error(err);
+            messageEl.textContent = "Erro ao adicionar técnica";
+            messageEl.className = "error";
+          });
       }
 
-      // carregar ao abrir
+      // carregar lista ao abrir
       loadTechniques();
     </script>
   </body>
