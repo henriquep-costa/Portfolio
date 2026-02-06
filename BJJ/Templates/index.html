@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BJJ API</title>
+  </head>
+  <body>
+    <h1>BJJ Techniques</h1>
+
+    <h2>Add technique</h2>
+
+    <input id="name" placeholder="Name" />
+    <input id="category" placeholder="Category" />
+    <input id="position" placeholder="Position" />
+    <input id="level" placeholder="Level" />
+
+    <button onclick="addTechnique()">Add</button>
+
+    <hr />
+
+    <h2>List</h2>
+    <ul id="list"></ul>
+
+    <script>
+      /* --------------------------
+   BUSCAR
+---------------------------*/
+      function loadTechniques() {
+        fetch("/api/techniques")
+          .then((response) => response.json())
+          .then((data) => {
+            const list = document.getElementById("list");
+            list.innerHTML = "";
+
+            data.forEach((t) => {
+              const li = document.createElement("li");
+              li.textContent = `${t.name} | ${t.category} | ${t.position} | ${t.level}`;
+              list.appendChild(li);
+            });
+          });
+      }
+
+      /* --------------------------
+   CADASTRAR
+---------------------------*/
+      function addTechnique() {
+        const technique = {
+          name: document.getElementById("name").value,
+          category: document.getElementById("category").value,
+          position: document.getElementById("position").value,
+          level: document.getElementById("level").value,
+        };
+
+        fetch("/api/techniques", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(technique),
+        }).then(() => loadTechniques());
+      }
+
+      // carregar ao abrir
+      loadTechniques();
+    </script>
+  </body>
+</html>
