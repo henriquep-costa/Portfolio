@@ -7,7 +7,7 @@ __pycache__/
 *.pyd
 
 # Arquivos gerados pelos programas
-*.html
+
 *.json
 *.xlsx
 
