@@ -1,35 +1,26 @@
-import json
-import os
+from core import load_books, add_books
 from flask import Flask, request, redirect, render_template
+
+NOME_ARQUIVO = "biblioteca.json"
 
 app = Flask(__name__)
 
 @app.route('/')
 
 def home():
-    if os.path.exists("biblioteca.json"):
-        with open("biblioteca.json", "r") as f:
-            livros = json.load(f)
-    else:
-        livros = []
+    
+    livros = load_books(NOME_ARQUIVO)
+
     return render_template("index.html", livros=livros)
 
 
 @app.route("/add", methods=["POST"])
 
 def add_livro():
-     
-     if os.path.exists("biblioteca.json"):
-        with open("biblioteca.json", "r") as f:
-            livros = json.load(f)
-     else:
-        livros = []
-
+   
     titulo = request.form["titulo"]
     autor = request.form["autor"]
-    livros.append({"titulo": titulo, "autor": autor})
-    with open("biblioteca.json", "w") as f:
-        json.dump(livros, f, indent=4)
+    add_books(NOME_ARQUIVO, titulo, autor)
     return redirect("/")
  
 
