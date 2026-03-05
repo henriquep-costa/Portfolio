@@ -1,0 +1,79 @@
+data,treino,exercicio,carga kg,reps,series
+02/03/2026,t1,supino barra,25,10,5
+02/03/2026,t1,remada sentado,40,10,5
+02/03/2026,t1,elevação lateral,15,10,4
+02/03/2026,t1,biceps sentado,12,10,4
+02/03/2026,t1,legpress,200,10,5
+02/03/2026,t1,cadeira abdutora,80,10,4
+04/03/2026,t2,desenvolvimento ombro,20,10,5
+04/03/2026,t2,puxada aberta costas,100,10,5
+04/03/2026,t2,triceps corda,80,10,4
+04/03/2026,t2,búlgaro,15,10,4
+04/03/2026,t2,stiff unilateral,15,10,4
+04/03/2026,t2,cadeira extensora,80,10,4
+06/03/2026,t1,supino barra,25,10,5
+06/03/2026,t1,remada sentado,40,10,5
+06/03/2026,t1,elevação lateral,15,10,4
+06/03/2026,t1,biceps sentado,12,10,4
+06/03/2026,t1,legpress,200,10,5
+06/03/2026,t1,cadeira abdutora,80,10,4
+04/03/2026,t2,desenvolvimento ombro,20,10,5
+04/03/2026,t2,puxada aberta costas,100,10,5
+04/03/2026,t2,triceps corda,80,10,4
+04/03/2026,t2,búlgaro,15,10,4
+04/03/2026,t2,stiff unilateral,15,10,4
+04/03/2026,t2,cadeira extensora,80,10,4
+09/03/2026,t1,supino barra,27,10,5
+09/03/2026,t1,remada sentado,42,10,5
+09/03/2026,t1,elevação lateral,15,10,4
+09/03/2026,t1,biceps sentado,12,10,4
+09/03/2026,t1,legpress,220,10,5
+09/03/2026,t1,cadeira abdutora,100,10,4
+11/03/2026,t2,desenvolvimento ombro,25,10,5
+11/03/2026,t2,puxada aberta costas,110,10,5
+11/03/2026,t2,triceps corda,85,10,4
+11/03/2026,t2,búlgaro,17,10,4
+11/03/2026,t2,stiff unilateral,17,10,4
+11/03/2026,t2,cadeira extensora,90,10,4
+13/03/2026,t1,supino barra,27,10,5
+13/03/2026,t1,remada sentado,42,10,5
+13/03/2026,t1,elevação lateral,15,10,4
+13/03/2026,t1,biceps sentado,12,10,4
+13/03/2026,t1,legpress,220,10,5
+13/03/2026,t1,cadeira abdutora,100,10,4
+16/03/2026,t2,desenvolvimento ombro,25,10,5
+16/03/2026,t2,puxada aberta costas,110,10,5
+16/03/2026,t2,triceps corda,85,10,4
+16/03/2026,t2,búlgaro,17,10,4
+16/03/2026,t2,stiff unilateral,17,10,4
+16/03/2026,t2,cadeira extensora,90,10,4
+18/03/2026,t1,supino barra,27,10,5
+18/03/2026,t1,remada sentado,42,10,5
+18/03/2026,t1,elevação lateral,15,10,4
+18/03/2026,t1,biceps sentado,12,10,4
+18/03/2026,t1,legpress,220,10,5
+18/03/2026,t1,cadeira abdutora,100,10,4
+20/03/2026,t2,desenvolvimento ombro,25,10,5
+20/03/2026,t2,puxada aberta costas,110,10,5
+20/03/2026,t2,triceps corda,85,10,4
+20/03/2026,t2,búlgaro,17,10,4
+20/03/2026,t2,stiff unilateral,17,10,4
+20/03/2026,t2,cadeira extensora,90,10,4
+23/03/2026,t1,supino barra,30,10,5
+23/03/2026,t1,remada sentado,45,10,5
+23/03/2026,t1,elevação lateral,15,10,4
+23/03/2026,t1,biceps sentado,12,10,4
+23/03/2026,t1,legpress,230,10,5
+23/03/2026,t1,cadeira abdutora,110,10,4
+25/03/2026,t2,desenvolvimento ombro,25,10,5
+25/03/2026,t2,puxada aberta costas,110,10,5
+25/03/2026,t2,triceps corda,85,10,4
+25/03/2026,t2,búlgaro,17,10,4
+25/03/2026,t2,stiff unilateral,17,10,4
+25/03/2026,t2,cadeira extensora,90,10,4
+27/03/2026,t1,supino barra,30,10,5
+27/03/2026,t1,remada sentado,45,10,5
+27/03/2026,t1,elevação lateral,15,10,4
+27/03/2026,t1,biceps sentado,12,10,4
+27/03/2026,t1,legpress,230,10,5
+27/03/2026,t1,cadeira abdutora,110,10,4
