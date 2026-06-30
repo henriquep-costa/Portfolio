@@ -1,5 +1,5 @@
 Job Tracker – Django Backend Project
-📌 Overview
+ - Overview
 
 Job Tracker is a backend web application built with Django to manage job applications.
 
@@ -15,7 +15,7 @@ Prevent duplicate applications for the same position
 
 This project was built to practice backend development concepts such as relational modeling, database constraints, and Django ORM.
 
-🧠 Main Concepts Applied
+ - Main Concepts Applied
 
 Relational database modeling
 
@@ -29,7 +29,7 @@ Django ORM
 
 Data integrity rules
 
-🏗 Database Structure
+ - Database Structure
 
 The system contains three main models:
 
@@ -41,7 +41,7 @@ Application
 
 Application connects User and Company and prevents duplicate entries using a UniqueConstraint.
 
-⚙ Technologies Used
+ - Technologies Used
 
 Python
 
@@ -51,7 +51,7 @@ SQLite (default)
 
 Git & GitHub
 
-🚀 How to Run Locally
+ -  How to Run Locally
 
 Clone the repository:
 
@@ -78,7 +78,7 @@ python manage.py migrate
 Run server:
 
 python manage.py runserver
-🔮 Possible Improvements
+ -  Possible Improvements
 
 Authentication system with login/logout
 
@@ -90,7 +90,6 @@ Frontend integration
 
 Dashboard with analytics
 
-👨‍💻 Author
 
 Henrique Costa
 Backend Developer in Training
